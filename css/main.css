@@ -237,7 +237,7 @@ div.heading div.img {
   padding: 30px 30px 30px 10px;
 }
 div.heading div.img img {
-  width: 200px;
+  width: 300px;
 }
 div.heading span.tag {
   padding-right: 15px;
@@ -330,3 +330,67 @@ div.publication div.text {
     text-align: left;
   }
 }/*# sourceMappingURL=main.css.map */
+
+/* =========================================
+   Awards & Honors Section Styles
+   ========================================= */
+
+/* 整体容器样式 */
+.awards-section {
+    background-color: #f0f2f5; /* 浅蓝色背景 */
+    border-left: 4px solid #407BD0; /* 左侧青色粗边框 */
+    padding: 20px 30px; /* 内边距，让内容不贴边 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 800px; /* 限制最大宽度，可根据实际情况调整或删除 */
+    margin-bottom: 30px; /* 底部留白，防止和后面的内容贴在一起 */
+}
+
+/* 标题样式 */
+.awards-title {
+    color: #003366; /* 深蓝色 */
+    font-size: 28px;
+    font-weight: 300; /* 较细的字体 */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* 单个奖项条目的布局 (使用 Flexbox 实现左右对齐) */
+.award-item {
+    display: flex;
+    align-items: flex-start; /* 顶部对齐 */
+    margin-bottom: 15px; /* 多个奖项之间的间距 */
+}
+
+/* 移除最后一个奖项的底部间距 */
+.award-item:last-child {
+    margin-bottom: 0;
+}
+
+/* 年份样式 */
+.award-year {
+    color: #003366; /* 蓝色 */
+    font-weight: bold; /* 加粗 */
+    font-size: 16px;
+    width: 80px; /* 固定宽度，方便如果有多个奖项时年份能垂直对齐 */
+    flex-shrink: 0; /* 防止年份被挤压 */
+}
+
+/* 奖项详情容器 */
+.award-details {
+    display: flex;
+    flex-direction: column; /* 竖向排列中英文 */
+    gap: 6px; /* 中英文之间的间距 */
+}
+
+/* 英文奖项名称 */
+.award-name-en {
+    color: #003366; /* 深蓝色 */
+    font-size: 16px;
+}
+
+/* 中文奖项名称 */
+.award-name-zh {
+    color: #888888; /* 浅灰色 */
+    font-style: italic; /* 斜体 */
+    font-size: 14px;
+}
